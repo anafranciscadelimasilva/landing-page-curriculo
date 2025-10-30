@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo - Sarinha</title>
+
+  <!-- Fonte e Ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #c59cff, #9b5fff, #d9b6ff);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      color: #2a1b3d;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 25px;
+      box-shadow: 0 0 25px rgba(155, 95, 255, 0.4);
+      width: 90%;
+      max-width: 480px;
+      padding: 40px 35px;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 1.9em;
+      color: #fff;
+      text-shadow: 0 0 8px rgba(255,255,255,0.6);
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      color: #f5e8ff;
+      font-size: 1em;
+      margin-bottom: 25px;
+    }
+
+    section {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    section h2 {
+      color: #fff;
+      font-size: 1.2em;
+      border-left: 4px solid #fff;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    }
+
+    section p, ul {
+      font-size: 0.95em;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "🌸 ";
+      color: #fff;
+    }
+
+    .contacts {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .contacts a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(135deg, #bb86fc, #7f39fb);
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-size: 0.9em;
+      box-shadow: 0 0 10px rgba(255,255,255,0.3);
+      transition: all 0.3s ease;
+    }
+
+    .contacts a:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 0 25px rgba(255,255,255,0.6);
+      background: linear-gradient(135deg, #d0a6ff, #a06bff);
+    }
+
+    .contacts i {
+      font-size: 1.1em;
+      color: #fff;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #fff; }
+      100% { text-shadow: 0 0 15px #fff; }
+    }
+
+    footer {
+      margin-top: 35px;
+      font-size: 0.8em;
+      color: #f1dcff;
+      text-shadow: 0 0 5px rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <h1>Ana Francisca de Lima Silva</h1>
+    <p class="subtitle">Estudante</p>
+
+    <section>
+      <h2>Sobre mim</h2>
+      <p>Olá, Meu nome é Ana Francisca  e estudo na E.E.M. Virgílio Correia Lima.
+Ainda estou escolhendo qual profissão seguir, mas me interesso muito por Odontologia e Psicologia, porque gosto da ideia de cuidar e entender as pessoas.
+
+Nos meus momentos livres, gosto de assistir aos jogos do Corinthians, comer minhas comidas favoritas e ver a saga Harry Potter, que é uma das minhas preferidas.
+
+Não tenho um cantor favorito, pois escuto de tudo um pouco. Meu filme favorito é toda a saga de Harry Potter, e a série que mais gosto é Outer Banks.</p>
+    </section>
+
+    
+
+    <section>
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Assistir aos jogos do Corinthians</li>
+        <li>Assistir series e filmes</li>
+        <li>Escutar musicas</li>
+      </ul>
+    </section>
+
+    <section class="contacts">
+      <a href="mailto:anafranciscadelimasilva@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://www.instagram.com/Anfrc_/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    </section>
+
+    <footer>© 2025 - Criado com 💜 por Aninha</footer>
+  </div>
+
+</body>
+</html>
